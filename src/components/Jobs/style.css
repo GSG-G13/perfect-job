@@ -2,6 +2,8 @@
     padding: 64px;
     background-color: rgb(255, 253, 127);
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
     flex-wrap: wrap;
     max-width: 1200px;

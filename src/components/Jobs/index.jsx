@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import axios from 'axios';
 import JobCard from '../JobCard'
+import Loading from '../Loading'
 
 import './style.css'
 
@@ -39,12 +40,12 @@ componentDidMount() {
 }
     
   render() {
-console.log("22ccc22", this.state)
 const jobs = this.state.jobs
     return (
       <div className='Jobs-container'>
+      
         {jobs.length === 0 
-        ? 'there is no jobs currently check again later!' 
+        ?   <Loading />
         : jobs.map(job => {
             return <JobCard job={job} key={job.job_id}/>
         }) }
