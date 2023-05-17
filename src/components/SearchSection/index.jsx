@@ -10,8 +10,6 @@ class SearchBar extends React.Component {
     };
   }
 
-
-
   handleInputChange = (event) => {
     const searchTerm = event.target.value;
     this.setState({ searchTerm });
@@ -28,13 +26,16 @@ class SearchBar extends React.Component {
 
     return (
       <div className={`input-box`}>
+    <img src='https://www.ziprecruiter.com/assets/static/img/homepage/phil.png' alt='logo1-image'/>
+        <h1 className='header'> Welcome!</h1>
+  
          
-        <form onSubmit={this.handleSearch}>
+        <form onSubmit={this.handleSearch} className='form-section'>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search on your job..."
             value={searchTerm}
-            onChange={this.handleInputChange}
+            onChange={this.handleInputChange} 
           />
           <button type="submit" className="icon" onClick={this.handleSearch} onKeyDown={(e)=>e.key === 'Enter'?this.handleSearch:false}> 
           Search</button>
