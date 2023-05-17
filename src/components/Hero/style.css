@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Saira+Condensed:wght@300&family=Secular+One&display=swap');
+* {
+    font-family: 'Secular' !important;
+ }
 .site_header {
     background: #fff;
     color: #72777c;
@@ -6,9 +10,8 @@
     vertical-align: top;
     z-index: 100;
     line-height: 49px;
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
 }
-._header-stick .main_site_header {
+.main_site_header {
     position: fixed !important;
     left: 0;
     top: 0;
@@ -40,7 +43,6 @@ div{
     vertical-align: top;
     z-index: 100;
     line-height: 49px;
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
 }
 .site_header .zr_logo {
     vertical-align: middle;
@@ -124,20 +126,16 @@ a:-webkit-any-link {
     vertical-align: top;
     z-index: 100;
     line-height: 49px;
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
-}
-body {
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
-    background: #fff;
-    color: #2f3639;
 }
 body {
     background: #fff;
     color: #2f3639;
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
 }
 body {
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+    background: #fff;
+    color: #2f3639;
+}
+body {
     color: #2f3639;
 }
 body {
@@ -170,7 +168,6 @@ html, body {
     box-sizing: inherit;
 }
 .site_header .dropdown_button {
-    -webkit-appearance: none;
     border-radius: 0;
     background-color: transparent;
     border: 0;
@@ -228,8 +225,9 @@ button {
     cursor: pointer;
 }
 .site_header .nav_title:hover, .site_header .nav_title:active {
-    text-decoration: underline;
+   
     cursor: pointer;
+    color:#b2e522;
 }
 
 .site_header .secondary_nav {
@@ -241,20 +239,17 @@ button {
     padding: 0 10px;
     color: #2f3639;
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
 }
 .site_header .post_button_desktop {
     letter-spacing: 0;
     display: inline-block;
     text-decoration: none;
     text-shadow: none;
-    -webkit-appearance: none;
     transition: background-color .1s linear,border-color .1s linear;
     vertical-align: middle;
     text-align: center;
     border-radius: 2em;
     outline: 0;
-    font-family: Arial,sans-serif;
     color: #277f6a;
     background: #fff none;
     border: 1px solid #d8dbdc;
@@ -267,6 +262,16 @@ button {
     font-size: 14px;
     margin-top: -4px;
 }
+
+.site_header .post_button_desktop:hover{
+   border-color: #b2e522; 
+}
 .site_header .sign_in_link, .site_header .sign_in_link:visited {
     color: #2f3639;
 }
+
+.site_header .sign_in_link:hover{
+    text-decoration: none;
+    color:#b2e522;
+}
+

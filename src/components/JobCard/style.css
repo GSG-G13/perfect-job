@@ -1,8 +1,16 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Saira+Condensed:wght@300&family=Secular+One&display=swap');
+
+*{
+  font-family: 'Bitter';
+}
 .job-card {
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     padding: 20px;
+    font-family: 'Secular';
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -25,23 +33,27 @@
   .job-title {
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Secular';
     margin-bottom: 5px;
   }
   
   .company {
     font-size: 16px;
     color: #888;
+    font-family: 'Secular';
     margin-bottom: 10px;
   }
   
   .location {
     font-size: 14px;
+    font-family: 'Secular';
     color: #888;
     margin-bottom: 10px;
   }
   
   .job-description {
     display: -webkit-box;
+    font-family: 'Saira';
     -webkit-line-clamp: 3; /* Number of lines to display */
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -51,24 +63,32 @@
   .job-footer {
     display: flex;
     align-items: center;
+    font-family: 'Secular';
     justify-content: space-between;
   }
   
   .job-type {
     font-size: 14px;
+    font-family: 'Secular';
     color: #888;
   }
   
   .apply-button .button {
     display: inline-block;
-    padding: 10px 20px;
+    font-family: 'Secular';
+    padding: 5px 10px;
     background-color: #4caf50;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    border: 1px solid;
+    font-size: small;
   }
   
   .apply-button .button:hover {
-    background-color: #45a049;
+    background-color: #fff;
+    font-family: 'Secular';
+    color:#4caf50;
+    border-color: #4caf50;
   }
   
