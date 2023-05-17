@@ -51,4 +51,4 @@ import './style.css'
 }
 
 
-export default Hero
+export default Hero;

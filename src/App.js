@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Hero from './components/Hero';
 import Jobs from './components/Jobs';
 import SearchBar from './components/SearchSection';
-
+import Footer from './components/Footer';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -28,6 +28,7 @@ class App extends Component {
         <Hero />
         <SearchBar onSearch={this.handleJobSearch} />
         <Jobs jobTitle={jobTitle} country={country} />
+        <Footer/>
       </div>
     );
   }
