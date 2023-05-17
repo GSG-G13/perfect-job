@@ -8,7 +8,7 @@ class Footer extends Component {
             <footer className="universal_footer expanded_footer footer_accordion">
 
                 <nav className="primary_footer_nav">
-                    <button className="footer-accordion-trigger accordion-toggle">Site Map</button>
+                    <button className="footer-accordion-trigger accordion-toggle"></button>
                     <div className="accordion-content">
                         <a href="#" className="chair_logo"><img src="https://www.ziprecruiter.com/zrs/starterview/ed91b887/img/ziprecruiter-chair-R.svg" alt="ZipRecruiter homepage" title="ZipRecruiter homepage" /></a>
                         <div className="nav_group job_seekers_group">
