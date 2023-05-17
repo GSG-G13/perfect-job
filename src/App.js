@@ -26,7 +26,6 @@ class App extends Component {
     return (
       <div className="App">
         <Hero />
-        {/* <SearchBar onSearch={this.handleCountrySearch} /> */}
         <SearchBar onSearch={this.handleJobSearch} />
         <Jobs jobTitle={jobTitle} country={country} />
       </div>

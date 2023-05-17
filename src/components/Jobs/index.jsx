@@ -24,9 +24,9 @@ const getData = async ({jobTitle}) => {
       };
 
       try {
-        const response = await axios.request(options);
-        return response.data
-        // return {data: dummayData}
+        // const response = await axios.request(options);
+        // return response.data
+        return {data: dummayData}
     } catch (error) {
         console.error(error);
     }
