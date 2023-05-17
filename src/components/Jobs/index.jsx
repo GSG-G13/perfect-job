@@ -5,24 +5,28 @@ import Loading from '../Loading'
 
 import './style.css'
 
-const getData = async () => {
+import dummayData from './dummayData'
+
+const getData = async ({jobTitle}) => {
+
     const options = {
         method: 'GET',
         url: 'https://jsearch.p.rapidapi.com/search',
         params: {
-          query: 'Python developer in Texas, USA',
+          query: `${jobTitle || 'react developer in Texas'}, USA`,
           page: '1',
           num_pages: '1'
         },
         headers: {
-          'X-RapidAPI-Key': '8cba5c6b26mshc1b723a4c3ed4c8p1d71d6jsnc19b243a0859',
+          'X-RapidAPI-Key': '697f1806e4msh0a42ffb123096bep15de95jsnb5b4d48de7d4',
           'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         }
       };
 
       try {
-        const response = await axios.request(options);
-        return response.data
+        // const response = await axios.request(options);
+        // return response.data
+        return {data: dummayData}
     } catch (error) {
         console.error(error);
     }
@@ -33,10 +37,23 @@ const getData = async () => {
         jobs: []
     }
 componentDidMount() {
-   getData().then(data=> {
+   getData({
+    jobTitle: this.props.jobTitle
+   }).then(data=> {
     this.setState({jobs: data.data})
 
    })
+}
+
+componentWillReceiveProps(nextProps) {
+  if (nextProps.jobTitle !== this.props.jobTitle) {
+  getData({
+    jobTitle: nextProps.jobTitle
+   }).then(data=> {
+    this.setState({jobs: data.data})
+
+   })
+  }
 }
     
   render() {

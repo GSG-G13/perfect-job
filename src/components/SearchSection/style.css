@@ -1,4 +1,48 @@
-.search-section-container {
-    padding: 64px;
-    background-color: rgb(255, 136, 127);
-}
+.input-box {
+    background-image: url("https://www.ziprecruiter.com/assets/static/img/homepage/hero-mvp.jpg");
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-section input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    background-color: #3E8E41;
+  }
+  
