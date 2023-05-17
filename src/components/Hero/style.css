@@ -11,7 +11,7 @@
     z-index: 100;
     line-height: 49px;
 }
-._header-stick .main_site_header {
+.main_site_header {
     position: fixed !important;
     left: 0;
     top: 0;
