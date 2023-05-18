@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Saira+Condensed:wght@300&family=Secular+One&display=swap');
-*{
-    font-family: 'Secular' !important;
-}
 .candidate_landing .universal_footer {
     margin-top: 15px;
 }
@@ -60,7 +56,9 @@ button {
     cursor: pointer;
 }
 
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 user agent stylesheet button {
     appearance: auto;
@@ -111,151 +109,46 @@ user agent stylesheet button {
     color: #2f3639;
 }
 
+.universal_footer a {
+    color: #2f3639;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a {
+    color: #0e75e2;
+    text-decoration: none;
+}
+
 .universal_footer .chair_logo img {
     height: 72px;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
-ol, ul {
-    list-style: none;
+
+.universal_footer.expanded_footer .nav_group {
+    margin: 0 0 30px;
+    text-align: left;
+    flex-grow: 1;
+    position: relative;
+    line-height: 1.5em;
 }
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.universal_footer.expanded_footer .accordion-content {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-.universal_footer.expanded_footer .secondary_footer_nav {
-    border-top: 1px solid #e0e2e3;
-    padding-top: 20px;
-    color: #bfc3c4;
-}
-
-.universal_footer .secondary_footer_nav {
-    display: block;
-    margin-bottom: 0;
-    padding: 0 10px;
-}
-
-.universal_footer nav {
-    margin: auto;
-    display: table;
-    margin-bottom: 1.8em;
-    font-size: 13px;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
-    display: block;
-}
-
-
-
 
 div {
     display: block;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-nav {
-    display: block;
-}
-
-.universal_footer .ccpa_legal {
-    display: block;
-    margin-bottom: 15px;
-    color: #515659;
-    font-size: 12px;
-}
-
-.universal_footer .secondary_footer_nav .item {
-    display: inline-block;
-    font-size: 12px;
-    padding: 0 3px;
-}
-.universal_footer .legal {
-    color: #515659;
-    font-size: 12px;
-    display: block;
-    margin: 15px auto 0;
-}
-
-
-.universal_footer.expanded_footer .secondary_footer_nav {
-    border-top: 1px solid #e0e2e3;
-    padding-top: 20px;
-    color: #bfc3c4;
-}
-
-.universal_footer nav {
-    margin: auto;
-    display: table;
-    margin-bottom: 1.8em;
-    font-size: 13px;
-}
-
-.teconsent {
-    width: auto;
-    display: inline-block;
-}
-ol, ul {
-    list-style: none;
-}
-
-ul {
-    list-style-type: disc;
-}
-
-.universal_footer.expanded_footer .nav_group .item a:link, .universal_footer.expanded_footer .nav_group .item a:visited {
-    padding: 0;
-    display: block;
-    color: #72777c;
-}
-
-.universal_footer.expanded_footer .nav_group .item a {
-    padding: 0;
-    display: block;
-    font-size: 13px;
-}
-
-.universal_footer nav a {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;
-    color: #2f3639;
-}
-.universal_footer.expanded_footer .nav_group .group_header.long_header {
-    max-width: 135px;
-    margin-bottom: 34px;
 }
 
 .universal_footer.expanded_footer .nav_group .group_header {
@@ -276,25 +169,248 @@ h3 {
     font-weight: bold;
 }
 
-
-universal_footer.expanded_footer .nav_group .item {
-    display: block;
-    margin: 0 0 20px;
-}
-
-user agent stylesheet li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 ol, ul {
     list-style: none;
 }
 
-user agent stylesheet ul {
+ul {
+    display: block;
     list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
+.universal_footer.expanded_footer .accordion-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+}
+.universal_footer.expanded_footer .secondary_footer_nav {
+    border-top: 1px solid #e0e2e3;
+    padding-top: 20px;
+    color: #bfc3c4;
+}
+.universal_footer .secondary_footer_nav {
+    display: block;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+.universal_footer nav {
+    margin: auto;
+    display: table;
+    margin-bottom: 1.8em;
+    font-size: 13px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+div {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+nav {
+    display: block;
+}
+.universal_footer .ccpa_legal {
+    display: block;
+    margin-bottom: 15px;
+    color: #515659;
+    font-size: 12px;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.universal_footer .secondary_footer_nav .item {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 3px;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.universal_footer .legal {
+    color: #515659;
+    font-size: 12px;
+    display: block;
+    margin: 15px auto 0;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.universal_footer.expanded_footer .secondary_footer_nav {
+    border-top: 1px solid #e0e2e3;
+    padding-top: 20px;
+    color: #bfc3c4;
+}
+.universal_footer nav {
+    margin: auto;
+    display: table;
+    margin-bottom: 1.8em;
+    font-size: 13px;
+}
+.teconsent {
+    width: auto;
+    display: inline-block;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+div {
+    display: block;
+}
+.universal_footer.expanded_footer .nav_group .group_header {
+    font-size: 17px;
+    font-weight: 400;
+    color: #2f3639;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.universal_footer.expanded_footer .nav_group .item {
+    display: block;
+    margin: 0 0 20px;
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
 .universal_footer.expanded_footer .nav_group .item a:link, .universal_footer.expanded_footer .nav_group .item a:visited {
     padding: 0;
     display: block;
@@ -306,38 +422,22 @@ user agent stylesheet ul {
     display: block;
     font-size: 13px;
 }
-
 .universal_footer nav a {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
     color: #2f3639;
 }
-
 .universal_footer a {
     color: #2f3639;
 }
-
-
-
-user agent stylesheet a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
+a:link, a:visited {
+    text-decoration: none;
 }
-
-user agent stylesheet li {
-    text-align: -webkit-match-parent;
+a {
+    color: #0e75e2;
+    text-decoration: none;
 }
-
-ol, ul {
-    list-style: none;
-}
-
-user agent stylesheet ul {
-    list-style-type: disc;
-}
-
 .universal_footer.expanded_footer .nav_group {
     margin: 0 0 30px;
     text-align: left;
@@ -345,23 +445,54 @@ user agent stylesheet ul {
     position: relative;
     line-height: 1.5em;
 }
-
-.universal_footer nav {
-    margin: auto;
-    display: table;
-    margin-bottom: 1.8em;
-    font-size: 13px;
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
-.universal_footer {
-    opacity: 1;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+div {
     display: block;
-    border-top: 1px solid #dbddde;
-    text-align: center;
-    padding: 30px 0 40px;
-    clear: both;
-    margin-top: 30px;
-    line-height: 1.5;
+}
+.universal_footer.expanded_footer .nav_group .group_header.long_header {
+    max-width: 135px;
+    margin-bottom: 34px;
+}
+.universal_footer.expanded_footer .nav_group .group_header {
+    font-size: 17px;
+    font-weight: 400;
+    color: #2f3639;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.universal_footer.expanded_footer .nav_group .item {
+    display: block;
+    margin: 0 0 20px;
 }
 
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -372,6 +503,157 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     font: inherit;
     vertical-align: baseline;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.universal_footer.expanded_footer .nav_group {
+    margin: 0 0 30px;
+    text-align: left;
+    flex-grow: 1;
+    position: relative;
+    line-height: 1.5em;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+universal_footer.expanded_footer .nav_group .item {
+    display: block;
+    margin: 0 0 20px;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+.universal_footer.expanded_footer .nav_group .item a:link, .universal_footer.expanded_footer .nav_group .item a:visited {
+    padding: 0;
+    display: block;
+    color: #72777c;
+}
+.universal_footer.expanded_footer .nav_group .item a {
+    padding: 0;
+    display: block;
+    font-size: 13px;
+}
+.universal_footer nav a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    color: #2f3639;
+}
+.universal_footer a {
+    color: #2f3639;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a {
+    color: #0e75e2;
+    text-decoration: none;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+.universal_footer.expanded_footer .nav_group {
+    margin: 0 0 30px;
+    text-align: left;
+    flex-grow: 1;
+    position: relative;
+    line-height: 1.5em;
+}
+.universal_footer nav {
+    margin: auto;
+    display: table;
+    margin-bottom: 1.8em;
+    font-size: 13px;
+}
+.universal_footer {
+    opacity: 1;
+    display: block;
+    border-top: 1px solid #dbddde;
+    text-align: center;
+    padding: 30px 0 40px;
+    clear: both;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 .universal_footer.expanded_footer .social_group a {
     margin: 0 4px 0 0;
     height: 32px;
@@ -381,7 +663,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     text-align: center;
     border-radius: 50%;
     color: #72777c;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.4);
     opacity: .6;
     transition: opacity .1s linear;
     position: relative;
@@ -389,33 +671,31 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     text-indent: 200%;
     overflow: hidden;
 }
-
 .universal_footer nav a {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
     color: #2f3639;
 }
-
+.universal_footer a {
+    color: #2f3639;
+}
 a:link, a:visited {
     text-decoration: none;
 }
-
 a:visited {
     color: purple;
 }
-
 a {
     color: #0e75e2;
     text-decoration: none;
 }
-
 .universal_footer.expanded_footer .social_group a.facebook::before {
     background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z' fill='%2372777c'/%3E%3C/svg%3E);
 }
 
 .zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
-    transform: translate(0, 0);
+    transform: translate(0,0);
     background-size: contain;
     background-position: center;
     content: " ";
@@ -425,87 +705,81 @@ a {
     vertical-align: text-bottom;
     background-repeat: no-repeat;
 }
-
 .universal_footer.expanded_footer .social_group a::before {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -0.5em 0 0 -0.5em;
 }
-
-.universal_footer.expanded_footer .social_group a.twitter::before {
-    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z' fill='%2372777c'/%3E%3C/svg%3E);
-}
-
-.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
-    transform: translate(0, 0);
-    background-size: contain;
-    background-position: center;
-    content: " ";
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    vertical-align: text-bottom;
-    background-repeat: no-repeat;
-}
-
-.universal_footer.expanded_footer .social_group a::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -0.5em 0 0 -0.5em;
-}
-
-.universal_footer.expanded_footer .social_group a.linkedin::before {
-    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z' fill='%2372777c'/%3E%3C/svg%3E);
-}
-
-.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
-    transform: translate(0, 0);
-    background-size: contain;
-    background-position: center;
-    content: " ";
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    vertical-align: text-bottom;
-    background-repeat: no-repeat;
-}
-
-.universal_footer.expanded_footer .social_group a::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -0.5em 0 0 -0.5em;
-}
-
-.universal_footer.expanded_footer .social_group a.instagram::before {
-    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3C/defs%3E%3Cpath d='M149.9 72.7a76.9 76.9 0 100 153.7 76.9 76.9 0 000-153.7zm0 126.9a50 50 0 110-99.8 50 50 0 010 99.8z' fill='%2372777c'/%3E%3Ccircle cx='229.8' cy='69.9' r='17.9' fill='%2372777c'/%3E%3Cpath d='M298.8 88.6c-.2-12.6-2.6-25.1-7-36.9A76.8 76.8 0 00248 7.9a110 110 0 00-36.4-7C195.7.2 190.6 0 150 0s-45.8 0-61.7.9a111 111 0 00-36.4 7A76.8 76.8 0 008.1 51.7 109.7 109.7 0 001.2 88c-.7 16-.9 21.1-.9 61.7s0 45.8.9 61.7a111 111 0 007 36.4A76.8 76.8 0 0052 291.6c11.6 4.5 23.9 7.1 36.4 7.5 16 .7 21.1.9 61.7.9s45.8 0 61.7-.9a111 111 0 0036.4-7 76.8 76.8 0 0043.8-43.8 110 110 0 007-36.4c.7-16 .9-21.1.9-61.7s-.2-45.7-1.1-61.6zm-27 121.6h-.2a81.8 81.8 0 01-5.2 28.1 49.7 49.7 0 01-28.5 28.5 85 85 0 01-27.8 5.2c-15.8.7-20.3.9-60.8.9s-44.7 0-60.8-.9a82.5 82.5 0 01-27.8-5.2 49.9 49.9 0 01-28.6-28.5 85 85 0 01-5.2-27.8c-.7-15.8-.9-20.3-.9-60.8s0-44.7.9-60.8c.1-9.6 1.8-19.1 5.2-28.1a49.6 49.6 0 0128.6-28.5 85 85 0 0127.8-5.2c15.8-.7 20.3-.9 60.8-.9s44.7 0 60.8.9c9.5.1 18.9 1.9 27.8 5.2a49.7 49.7 0 0128.5 28.5 85 85 0 015.2 27.8c.7 15.8.9 20.3.9 60.8 0 40.6 0 44.9-.7 60.8z' fill='%2372777c'/%3E%3C/svg%3E);
-}
-
-.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
-    transform: translate(0, 0);
-    background-size: contain;
-    background-position: center;
-    content: " ";
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    vertical-align: text-bottom;
-    background-repeat: no-repeat;
-}
-
-.universal_footer.expanded_footer .social_group a::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -0.5em 0 0 -0.5em;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.social-item{
-    position: relative;
-    top: 10px;
+.universal_footer.expanded_footer .social_group a.twitter::before {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z' fill='%2372777c'/%3E%3C/svg%3E);
+}
+.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
+    transform: translate(0,0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+}
+.universal_footer.expanded_footer .social_group a::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -0.5em 0 0 -0.5em;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.universal_footer.expanded_footer .social_group a.linkedin::before {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z' fill='%2372777c'/%3E%3C/svg%3E);
+}
+.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
+    transform: translate(0,0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+}
+.universal_footer.expanded_footer .social_group a::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -0.5em 0 0 -0.5em;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.universal_footer.expanded_footer .social_group a.instagram::before {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3C/defs%3E%3Cpath d='M149.9 72.7a76.9 76.9 0 100 153.7 76.9 76.9 0 000-153.7zm0 126.9a50 50 0 110-99.8 50 50 0 010 99.8z' fill='%2372777c'/%3E%3Ccircle cx='229.8' cy='69.9' r='17.9' fill='%2372777c'/%3E%3Cpath d='M298.8 88.6c-.2-12.6-2.6-25.1-7-36.9A76.8 76.8 0 00248 7.9a110 110 0 00-36.4-7C195.7.2 190.6 0 150 0s-45.8 0-61.7.9a111 111 0 00-36.4 7A76.8 76.8 0 008.1 51.7 109.7 109.7 0 001.2 88c-.7 16-.9 21.1-.9 61.7s0 45.8.9 61.7a111 111 0 007 36.4A76.8 76.8 0 0052 291.6c11.6 4.5 23.9 7.1 36.4 7.5 16 .7 21.1.9 61.7.9s45.8 0 61.7-.9a111 111 0 0036.4-7 76.8 76.8 0 0043.8-43.8 110 110 0 007-36.4c.7-16 .9-21.1.9-61.7s-.2-45.7-1.1-61.6zm-27 121.6h-.2a81.8 81.8 0 01-5.2 28.1 49.7 49.7 0 01-28.5 28.5 85 85 0 01-27.8 5.2c-15.8.7-20.3.9-60.8.9s-44.7 0-60.8-.9a82.5 82.5 0 01-27.8-5.2 49.9 49.9 0 01-28.6-28.5 85 85 0 01-5.2-27.8c-.7-15.8-.9-20.3-.9-60.8s0-44.7.9-60.8c.1-9.6 1.8-19.1 5.2-28.1a49.6 49.6 0 0128.6-28.5 85 85 0 0127.8-5.2c15.8-.7 20.3-.9 60.8-.9s44.7 0 60.8.9c9.5.1 18.9 1.9 27.8 5.2a49.7 49.7 0 0128.5 28.5 85 85 0 015.2 27.8c.7 15.8.9 20.3.9 60.8 0 40.6 0 44.9-.7 60.8z' fill='%2372777c'/%3E%3C/svg%3E);
+}
+.zr-icon-base, .universal_footer.expanded_footer .social_group a.facebook::before, .universal_footer.expanded_footer .social_group a.twitter::before, .universal_footer.expanded_footer .social_group a.linkedin::before, .universal_footer.expanded_footer .social_group a.instagram::before, .universal_footer.expanded_footer .footer-accordion-trigger::after, .universal_footer.expanded_footer .primary_footer_nav.showing .footer-accordion-trigger::after {
+    transform: translate(0,0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+}
+.universal_footer.expanded_footer .social_group a::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -0.5em 0 0 -0.5em;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
