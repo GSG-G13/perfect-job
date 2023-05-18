@@ -5,22 +5,15 @@ class JobCard extends Component {
   render() {
     const job = this.props.job
     return (
-      <div className='job-card'>
-        <div class="job-logo">
-          <img src={job.employer_logo || 'https://cdn-payscale.com/content/placeholder-images/job-placeholder.png'} alt={job.job_title} className='card-logo' />
-        </div>
-        <div class="job-details">
-
-          <div class="job-title">{job.employer_name}</div>
-          <div className="location"> {job.job_city}</div>
-          <div className="job-description"> {job.job_description}</div>
-        
-          <div class="job-footer">
-            <div class="job-type">Full-time</div>
-            <div class="apply-button">
-              <a href="#" class="button">Apply Now</a>
-            </div>
-          </div>
+      <div className='card-container'>
+         <img src={job.employer_logo || 'https://cdn-payscale.com/content/placeholder-images/job-placeholder.png'} alt={job.job_title} className='card-logo'
+        />
+        <div className='card-content'>
+         <h4 className='card-header'> {job.employer_name}</h4>
+          <p className='text-header'>{job.job_city}</p>
+          <div className='skills'>{job.job_required_skills}/</div>
+          <div className='position'>{job.job_employment_type}</div>
+          <span className='timeStamp'>{job.job_posted_at_timestamp}</span>
         </div>
       </div>
     )
